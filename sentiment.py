@@ -49,7 +49,7 @@ with tab2:
       with col2:
           st.image("pic2.jpg",width=300)
       select = st.radio("Select one:", ["Camera","Upload file"])
-      if(select=="Upload file") : uploaded_image=st.file_uploader("upload an image",type=["jpg","png","jpeg"])                                                         
+      if(select=="Upload file") : uploaded_image=st.file_uploader("upload an image",type=["jpg","png","jpeg","heic"])                                                         
       else : uploaded_image=st.camera_input("take picture")
       search_object="You are an emotion recognition expert. Analyze the text in this image and return only one emotion that best matches the sentiment. Choose only from: 😡Angry, 😃Happy, 😔Sad, 😨Fear, 😮Surprise, 🥸Disgust, or 🙂Neutral. Reply with only that one word — no explanation."
       if uploaded_image:
