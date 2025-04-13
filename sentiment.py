@@ -22,7 +22,7 @@ with tab1:
        st.text("✨ An AI Project by Soumendu Das ✨")
     col1, col2, col3 = st.columns([1, 2, 1],gap="medium")  # Adjust the ratio if needed
     with col2:
-        st.image("D:/project/sentiment_analysis/pic1.jpg",width=300)
+        st.image("pic1.jpg",width=300)
     st.markdown("""🧠 Sentiment Analysis from Image — by Soumendu Das
 Welcome to my AI-powered Sentiment Analysis App!
 This tool allows you to detect emotions from images containing text — such as tweets, handwritten notes, memes, posters, and more.
@@ -47,7 +47,7 @@ Angry, Happy, Sad, Fear, Surprise, Disgust, or Neutral.""")
 with tab2:
       col1, col2, col3 = st.columns([1, 2, 1],gap="medium")  # Adjust the ratio if needed
       with col2:
-          st.image("D:/project/sentiment_analysis/pic2.jpg",width=300)
+          st.image("pic2.jpg",width=300)
       select = st.radio("Select one:", ["Camera","Upload file"])
       if(select=="Upload file") : uploaded_image=st.file_uploader("upload an image",type=["jpg","png","jpeg"])                                                         
       else : uploaded_image=st.camera_input("take picture")
